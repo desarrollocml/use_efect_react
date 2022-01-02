@@ -5,8 +5,14 @@ const initialUser = {
     email: "correo@correo.com"
 }
 
+const initialPosts = [
+    {id:1, title:"Post 1"},
+    {id:2, title:"Post 2"},
+]
+
 export default function FetchCard() {
     const [user, setUser] = useState(initialUser);
+    const [posts, setPosts]= useState(initialPosts);
 
     const updateUser = () => {
         getUser()
