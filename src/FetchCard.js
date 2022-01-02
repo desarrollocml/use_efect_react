@@ -21,6 +21,9 @@ export default function FetchCard() {
 
     return (
         <div>
+            <button onClick={updateUser}>
+                Otro Usuario
+            </button>
             <h1>{user.name} </h1>
             <h1>{user.email} </h1>
         </div>
